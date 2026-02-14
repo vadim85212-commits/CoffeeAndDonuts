@@ -1,0 +1,153 @@
+.sign{
+    display: grid;
+    width: 40%;
+    margin: 25px auto;
+}
+.sign a{
+    text-decoration: none;
+}
+.sign label{
+    color: #626364;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 10px
+}
+.sign label.und{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.sign input{
+    padding: 10px 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #626364;
+}
+span.red{
+    color: red;
+}
+.mem-block-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.mem-block-1 p{
+    color: #626364;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.mem-block-1 a{
+    color: #626364;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.check-block{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+.check{
+    border: 1px solid #626364;
+    height: 20px;
+    width: 50px;
+    border-radius: 10px;
+    background: #d0d2d3;
+    display: flex;
+    align-items: center;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+span.checkbox{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+    margin-left: 0px;
+}
+.mem-block-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mem-block-2 button{
+    background-color: transparent;
+    height: 35px;
+    line-height: 1.8;
+    font-size: 16px;
+    width: 35%;
+    border: 1px solid #87173f;
+    color: white;
+    background-color: #87173f;
+}
+.mem-block-2 button:hover,
+.mem-block-2 button:focus {
+    color: #87173f;
+    background-color: white;
+}
+.mem-block-2 button.reg{
+    width: 70%;
+    margin: 20px auto;
+}
+.mem-block-2 a{
+    height: 35px;
+    color: #87173f;
+    background-color: white;
+    line-height: 1.8;
+    font-size: 16px;
+    width: 35%;
+    border: 1px solid #87173f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.mem-block-2 a:hover,
+.mem-block-2 a:focus {
+    color: white;
+    background-color: #87173f;
+}
+@media (max-width: 768px) {
+    .sign{
+        width: 70%;
+    }
+}
+@media (max-width: 375px) {
+    .sign label{
+        font-size: 14px;
+    }
+    .sign label.und{
+        font-size: 10px;
+    }
+    .sign input{
+        padding: 5px 10px;
+    }
+    .gg_text{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .g_text{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .mem-block-1 a{
+        display: none;
+    }
+    .check-block{
+        width: 100%;
+    }
+    .mem-block-2{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .mem-block-2 a{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .mem-block-2 button{
+        width: 80%;
+    }
+}

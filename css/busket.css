@@ -1,0 +1,231 @@
+.main-busket{
+    display: grid;
+    grid-row-gap: 20px;
+    width: 75%;
+    margin: 20px auto;
+}
+.itog-block{
+    height: 100px;
+    border: 1px solid;
+    color: #626364;
+    border-radius: 5px;
+    border: 1px solid #cecfd1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.itog-block p{
+    line-height: 1.8;
+    font-size: 18px;
+    width: 10%;
+}
+.itog-block h3{
+    line-height: 1.8;
+    font-size: 24px;
+    width: 15%;
+}
+.itog-block form{
+    width: 20%;
+}
+.itog-block form button{
+    background: #B36371;
+    height: 45px;
+    color: #fff;
+    line-height: 1.8;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    width: 80%;
+}
+.busket-nav{
+    border: 1px solid #cecfd1;
+    color: #626364;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.all{
+    width: 20%;
+    text-align: center;
+    margin-right: 5%;
+}
+.all hr{
+    margin-top: 0px;
+    background: rgb(172, 17, 17);
+    height: 2px;
+    border: 1px solid rgb(172, 17, 17);
+}
+.busket-tov-block{
+    border: 1px solid #cecfd1;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-radius: 5px;
+}
+.busket-tov{
+    color: #626364;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.busket-tov img{
+    width: 15%;
+    border-radius: 20px;
+}
+.tov-name{
+    width: 40%;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.tov-cost{
+    width: 10%;
+    text-align: center;
+}
+.tov-cost p{
+    line-height: 1.8;
+    font-size: 12px;
+}
+.tov-qua{
+    width: 10%;
+    text-align: center;
+}
+.tov-qua div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #e6e8eb;
+    border: 1px solid #cecfd1;
+    align-items: center;
+    border-radius: 3px;
+}
+.tov-qua div p{
+    line-height: 1.8;
+    font-size: 14px;
+}
+.tov-qua p{
+    line-height: 1.8;
+    font-size: 12px;
+}
+.del{
+    width: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.del-x{
+    line-height: 1.8;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+.del-x375{
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    margin: 5px auto;
+}
+.del-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+}
+.del-all span, .del-all p{
+    color: #626364;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.Plus-minus{
+    cursor: pointer;
+}
+.busket-no{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .main-busket{
+      width: 95%;
+    }
+    .all{
+        width: 30%;
+    }
+    .del-all{
+        width: 15%;
+    }
+    .itog-block form {
+        width: 30%;
+    }
+}
+@media (max-width: 375px) {
+    .itog-block{
+        height: 75px;
+        padding-bottom: 0px;
+    }
+    .itog-block p {
+        line-height: 1.8;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itog-block h3 {
+        line-height: 1.8;
+        font-size: 16px;
+        width: 30%;
+    }
+    .itog-block form {
+        width: 45%;
+    }
+    .itog-block form button {
+        background: #B36371;
+        height: 35px;
+        color: #fff;
+        line-height: 1.8;
+        font-size: 14px;
+        border: 0px;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .del-all {
+        width: 30%;
+    }
+    .all {
+        width: 60%;
+        margin-right: 10%;
+    }
+    .busket-tov{
+        flex-direction: column;
+        align-items: center;
+    }
+    .busket-tov img{
+        width: 45%;
+    }
+    .tov-name{
+        width: 60%;
+        margin: 5px auto;
+        text-align: center;
+    }
+    .tov-cost{
+        width: 40%;
+
+    }
+    .tov-qua{
+        width: 30%;
+        margin: 10px auto;
+    }
+    .del{
+        width: 100%;
+    }
+    .del-x375{
+        font-size: 20px;
+        display: block;
+    }
+    .del-x{
+        display: none;
+    }
+}
